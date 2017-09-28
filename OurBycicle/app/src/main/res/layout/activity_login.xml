@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="#7799DD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDtextfield"
+            android:hint="아이디를 입력하세요."
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/PWtextfield"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/IDtextfield"
+            android:hint="비밀번호를 입력하세요."
+            android:layout_alignRight="@id/IDtextfield"
+            android:layout_alignLeft="@id/IDtextfield" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/button"
+            android:id="@+id/loginButton"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/PWtextfield"
+            android:layout_alignLeft="@+id/IDCheckBox"
+            android:layout_alignStart="@+id/IDCheckBox" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            android:id="@+id/joinButton"
+            android:background="@drawable/button"
+            android:layout_alignTop="@+id/loginButton"
+            android:layout_toRightOf="@+id/loginButton"
+            android:layout_toEndOf="@+id/loginButton"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID 저장"
+            android:id="@+id/IDCheckBox"
+            android:checked="false"
+            android:layout_alignTop="@+id/SaveCheckBox" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동 로그인"
+            android:id="@+id/SaveCheckBox"
+            android:checked="false"
+            android:layout_above="@+id/joinButton"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/joinButton"
+            android:layout_alignStart="@+id/joinButton" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView"
+            android:background="@drawable/icon"
+            android:layout_below="@+id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView"
+            android:text="Go! 자전거!"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+</RelativeLayout>

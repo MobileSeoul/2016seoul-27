@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="160dp"
+    android:minWidth="500dp"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444444"
+        android:textSize="22dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="그룹 요청"
+        android:layout_weight="0.05"
+        android:layout_gravity="left" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textColor="#444444"
+        android:textColorHint="#aaaaaa"
+        android:hint="아이디를 입력해주세요."
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:text="찾기"
+            android:id="@+id/findButton" />
+
+        <Button
+            android:textColor="@color/wallet_holo_blue_light"
+            android:layout_marginLeft="10dp"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:id="@+id/cancelButton"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>
